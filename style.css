@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Quicksand:wght@400;500;700&family=Ubuntu:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    animation: fade .5s;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+/* main {
+    display: flex;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1500px;
+    transition: none;
+}
+main section {
+    scroll-snap-type: x mandatory;
+}
+main .first {
+    min-width: 100%;
+    max-width: 100vw;
+    scroll-behavior: smooth;
+    height: 100%;
+    scroll-snap-align: start;
+    transition: .7s;
+}
+main .second {
+    min-width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    scroll-snap-align: start;
+    
+} */
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed ;
+    top: 0; left: 10%;
+    padding: 15px;
+    width: 80%;
+    background-color: #E1E8E5;
+    border-radius: 0 0 20px 20px;
+    z-index: 2;
+}
+nav a img {
+    width: 180px;
+    position: absolute; top: 10px;
+    transition: 0.5s;
+    margin-left: 100px;
+}
+nav  a img:hover {
+    transform: scale(105%);
+}
+nav .navLinks {
+    display: flex;
+    gap: 50px;
+    outline: none;
+    position: relative;
+}
+nav .navLinks p {
+    cursor: pointer;
+    transition: 0.5s;
+}
+nav .navLinks p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    font-size: 1.1em;
+    transition: 0.5s;
+}
+nav .navLinks p:hover {
+    transform: scale(115%);
+}
+nav .navLinks a:hover {
+    color: #7DCCE1; 
+}
+
+main .first {
+    background-image: url(/Media/bg-first.jpg);
+    width: 100vw;
+    height: 90vh;
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+main .second {
+    margin-top: 10px;
+}
+main .second .sec-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+main .second .sec-container img {
+    width: 350px;
+    border-radius: 20px;
+    animation: fade .5s;
+    transition: .5s;
+    /* box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.75); */
+}
+main .second .sec-container img:hover {
+    transform: scale(110%);
+}
+main .sec-container .sec-capt {
+    width: 50%;
+}
+main .sec-container .sec-capt h1 {
+    font-size: 3em;
+}
+main .sec-container .sec-capt p {
+    font-size: 1.3em;
+}
+main .sec-container .sec-capt p span {
+    color: salmon;
+    font-weight: 700;
+}
+
+
+main .third {
+    margin-top: 80px;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+main .third .third-container {
+    display: flex;
+}
+main .third .third-container img {
+    width: 600px;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 100px;
+    position: relative;
+    transition: 0.3s;
+    z-index: -1;
+}
+main .third .third-container .teyvat{
+    width: 600px;
+    height: 400px;
+    transition: .5s;
+}
+main .third .third-container .teyvat:hover {
+    transform: scale(105%);
+}
+/* main .third .third-container img:hover{
+    transform: scale(110%);
+} */
+main .third .third-container .teyvat h1 {
+    position: absolute; top: 160px; left: 220px;
+    transition: 0.5s;
+}
+main .third .third-container .teyvat h1:hover {
+    transform: scale(150%);
+    opacity: 100%;
+}
+main .third .third-container .third-capt{
+    padding-left: 50px;
+    flex-direction: column;
+}
+main .third .third-container .third-capt h1 {
+    font-size: 2.5em;
+}
+main .third .third-container .third-capt p {
+    font-size: 1.2em;
+}
+main .third .third-container .third-capt img {
+    width: 300px;
+    margin-left: 130px;
+}
+
+main .fourth {
+    margin-top: 30px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+main .fourth .fourth-container {
+    display: flex;
+}
+main .fourth .kanan {
+    padding: 20px;
+    position: relative;
+}
+main .fourth .kanan::after {
+    content: '';
+    width: 5px;
+    height: 400px;
+    background-color: #005BCE;
+    border-radius: 10px;
+    position: absolute; left: 630px; bottom: 20px;
+}
+main .fourth .kanan h1 {
+    font-size: 4em;
+}
+main .fourth .kiri {
+    width: 80%;
+}
+main .fourth .kiri img {
+    width: 300px;
+    border-radius: 20px;
+    transition: .2s;
+}
+main .fourth .kiri img:hover {
+    transform: scale(102%);
+}
+main .fourth .kiri .atas {
+    display: flex;
+    gap: 8px;
+}
+main .fourth .kiri .bawah {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+main .fifth {
+    margin-top: 60px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+main .fifth .fifth-capt {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+main .fifth .fifth-capt h1  {
+    font-size: 3em;
+}
+main .fifth .fifth-poto {
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+main .fifth .fifth-poto img {
+    width: 300px;
+    border-radius: 20px;
+    position: relative;
+    transition: .2s;
+}
+main .fifth .fifth-poto img:hover {
+    transform: scale(102%);
+}
+
+main .sixth {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+main .sixth .sixth-capt {
+    padding: 30px;
+    text-align: center;
+    display: block;
+}
+main .sixth .sixth-capt h1 {
+    font-size: 3em;
+}
+main .sixth .sixth-capt span {
+    color: salmon;
+    font-weight: 700;
+}
+main .sixth .sixth-capt span a {
+    text-decoration: none;
+    color: salmon;
+    font-weight: 700;
+    transition: .3s;
+}
+main .sixth .sixth-capt span:hover {
+    transform: scale(102%);
+}
+main .sixth .sixth-poto {
+    width: 75%;
+    margin: auto;
+}
+main .sixth .sixth-poto img {
+    width: 300px;
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.5s;
+}
+main .sixth .sixth-poto img:hover {
+    transform: scale(102%);
+}
